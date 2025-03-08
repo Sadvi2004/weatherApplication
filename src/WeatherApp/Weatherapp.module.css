@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    background-color: #2c2c2c;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.input::placeholder {
+    color: #bbb;
+}
+
+.button {
+    padding: 12px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.weatherContainer {
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.weatherIcon {
+    width: 80px;
+    height: 80px;
+}
+
+.weatherText {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.weatherIconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fbc02d;
+}
+
+.weatherDescription {
+    font-size: 16px;
+    color: #ddd;
+    text-transform: capitalize;
+}
